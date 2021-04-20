@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #000;;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.logo{
+    width: 220px;
+}
+
+.login {
+    text-align: center;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 40px 20px;
+    margin: 30px;
+}
+
+.login form input {
+    width: 100%;
+    height: 30px;
+    margin: 7px 0;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login form button {
+    background-color: #0095f6;
+    color: #fff;
+    padding: 7px 10px;
+    margin: 20px 0;
+    width: 100%;
+    border: none;
+}
+
+/* REGISTRO.HTML*/
+.cadastro {
+    text-align: center;
+    width: 450px;
+    border: 1px solid #ccc;
+    padding: 40px 20px;
+    margin: 30px;   
+}
+
+.cadastro form input {
+    width: 100%;
+    height: 30px;
+    margin: 7px 0;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.cadastro form button {
+    background-color: #0095f6;
+    color: #fff;
+    padding: 7px 10px;
+    margin: 20px 0;
+    width: 100%;
+    border: none;
+}
+
+.cta-cadastro {
+    border: 1px solid #ccc
+}
+
+.documentacao {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;  
+}
+
+.cta-link{
+    color: #000;
+    font-weight: bold;
+}
+

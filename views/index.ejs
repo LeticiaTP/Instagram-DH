@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title> Página inicial </title>
+</head>
+<body>
+
+    <main>
+    <article>
+        <header class="caixa-usuario">
+            <div class="user">
+                <img src="/img/foto-perfil.jpg" alt="foto de perfil" class="foto-perfil">
+                    <a href="#" class="username"> whosletcia </a>
+            </div>
+                <img src="/img/icons/more-vertical.svg" alt="mais opções" class="tres-pontinhos"> 
+            </header>
+
+            <section class="post">
+                <div class="img-principal" title="foto postada pelo user" style="background-image: url('/img/publicacao.jpg');"></div>
+            </section>
+
+            <section class="comentarios-publicacao">
+                <div class="caixa-texto-publicacao">
+                    <p class="texto-publicacao">Partiu férias!</p>
+                    <div class="curtidas">
+                    <img src="/img/icons/heart.svg" alt="botão de like" class="like">
+                    <p class="n-like"> 400 curtidas </p>
+                    </div>
+                    <p class="data">Postado no dia: 16/04/2020</p>
+                </div>
+                
+                <div class="secao-comentarios">
+                    <p class="comentario"> <strong class="user-comentario"> realbatman </strong> obaa</p>
+                    <p class="comentario"> <strong class="user-comentario"> etbilu </strong> boa viageeem!!!</p>
+                    <p class="comentario"> <strong class="user-comentario"> sonic </strong> tudoooo</p>
+                    <p class="comentario"> <strong class="user-comentario"> mulderfox </strong> eu sabiaa!!!! </p>
+                </div>
+
+            </section>
+            <hr style="height:1px;border-width:0;color:gray;background-color:#ccc">
+            <footer class="comentar">
+                <input type="text" name="comenta" id="comenta" placeholder="Adicione um comentário..." class="input-coment">
+                <button type="submit" class="publicar"> Publicar </button>
+            </footer>
+        
+    </article>
+    </main>
+
+</body>
 </html>
