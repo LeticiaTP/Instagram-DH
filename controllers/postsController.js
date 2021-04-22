@@ -1,3 +1,4 @@
+const {request} = require('express');
 const {Post, sequelize} = require('../models/');
 
 const postsController = {
@@ -8,25 +9,23 @@ const postsController = {
         });
     },
     create: async (req, res) => {
-        let {texto, img, usuarios_id, n_likes} = req.body;
+        let {texto, img, usuarios_id} = req.body;
 
         let novoPost = await Post.create({
             texto,
             img,
             usuarios_id,
-            n_likes
         });
         return res.json(novoPost);
     },
     update: async (req, res) => {
         let {id} = req.params;
-        let {texto, img, usuarios_id, n_likes} = req.body;
+        let {texto, img, usuarios_id} = req.body;
 
         let postAtualizado = await Post.update({
             texto,
             img,
             usuarios_id,
-            n_likes
         }, {
             where: {id}
         })

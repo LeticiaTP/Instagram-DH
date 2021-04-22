@@ -23,25 +23,25 @@
             </header>
 
             <section class="post">
-                <div class="img-principal" title="foto postada pelo user" style="background-image: url('/img/publicacao.jpg');"></div>
+                <div class="img-principal" title="foto postada pelo user" style="background-image: url('<%= post.img %>');"></div>
             </section>
 
-            <section class="comentarios-publicacao">
-                <div class="caixa-texto-publicacao">
-                    <p class="texto-publicacao">Partiu férias!</p>
+            <p> <%= post.texto %> </p>
+            <div class="caixa-texto-publicacao">
                     <div class="curtidas">
-                    <img src="/img/icons/heart.svg" alt="botão de like" class="like">
-                    <p class="n-like"> 400 curtidas </p>
+                        <img src="img/icons/heart.svg" alt="botão like">
+                        <span><%= post.n_likes %> likes</span>
                     </div>
-                    <p class="data">Postado no dia: 16/04/2020</p>
+                    <strong class="data">Postado no dia: 16/04/2020</strong>
                 </div>
-                
+            </div>
                 <div class="secao-comentarios">
                     <p class="comentario"> <strong class="user-comentario"> realbatman </strong> obaa</p>
                     <p class="comentario"> <strong class="user-comentario"> etbilu </strong> boa viageeem!!!</p>
                     <p class="comentario"> <strong class="user-comentario"> sonic </strong> tudoooo</p>
                     <p class="comentario"> <strong class="user-comentario"> mulderfox </strong> eu sabiaa!!!! </p>
                 </div>
+            </div>
 
             </section>
             <hr style="height:1px;border-width:0;color:gray;background-color:#ccc">
@@ -49,7 +49,8 @@
                 <input type="text" name="comenta" id="comenta" placeholder="Adicione um comentário..." class="input-coment">
                 <button type="submit" class="publicar"> Publicar </button>
             </footer>
-        
+
+            
     </article>
         <% } %>
     </main>
