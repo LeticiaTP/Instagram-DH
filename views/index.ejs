@@ -35,10 +35,13 @@
                 </div>
             </div>
                 <div class="secao-comentarios">
-                    <p class="comentario"> <strong class="user-comentario"> realbatman </strong> obaa</p>
-                    <p class="comentario"> <strong class="user-comentario"> etbilu </strong> boa viageeem!!!</p>
-                    <p class="comentario"> <strong class="user-comentario"> sonic </strong> tudoooo</p>
-                    <p class="comentario"> <strong class="user-comentario"> mulderfox </strong> eu sabiaa!!!! </p>
+                    <ol>
+                        <% for (let comentario of post.comentarios) { %>
+                            <li>
+                                <p class="comentario"> <%= comentario.texto %></p>
+                            </li>
+                        <% } %>
+                    </ol>
                 </div>
             </div>
 

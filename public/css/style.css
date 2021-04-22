@@ -70,6 +70,11 @@ main {
     margin: 20px 0;
     width: 100%;
     border: none;
+    cursor: pointer;
+}
+
+.cadastro form button:hover{
+    background-color: #0231ff;
 }
 
 .cta-cadastro {

@@ -1,9 +1,13 @@
+const { response } = require('express');
 const {Usuario, sequelize} = require('../models/');
 
 const usuariosController = {
     index: async (req, res) => {
         let usuarios = await Usuario.findAll();
         return res.json(usuarios);
+    },
+    registro: (req, res) => {
+        return res.render('registro');
     },
     create: async (req, res) => {
         let {nome, email, senha} = req.body
