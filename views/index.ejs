@@ -10,12 +10,16 @@
     <title> Página inicial </title>
 </head>
 <body>
+    <header>
+        <img src="img/logo.png" alt="Instagram" class="logo">
+    </header>
+
     <main>
         <% for(post of listarPosts) { %>
     <article>
         <header class="caixa-usuario">
             <div class="user">
-                <img src="/img/foto-perfil.jpg" alt="foto de perfil" class="foto-perfil">
+                <img src="/img/foto-perfil.png" alt="foto de perfil" class="foto-perfil">
                     <a href="#" class="username"> <%= post.usuario.nome %> </a>
             </div>
                 <img src="/img/icons/more-vertical.svg" alt="mais opções" class="tres-pontinhos"> 

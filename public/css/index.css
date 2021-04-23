@@ -1,11 +1,13 @@
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #fafafa;
-    color: #000;;
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -17,6 +19,18 @@ main {
 }
 
 /*INDEX.HTML*/
+
+header {
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+header .logo {
+    width: 150px;
+}
+
 article {
     border: 1px solid #ccc;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
